@@ -1,0 +1,7 @@
+{
+  "name": "caseAppSideMenu",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
