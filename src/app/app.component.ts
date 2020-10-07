@@ -13,37 +13,36 @@ export class AppComponent implements OnInit {
   public selectedIndex = 0;
   public appPages = [
     {
-      title: 'Inbox',
-      url: '/folder/Inbox',
-      icon: 'mail'
+      title: 'PersonalCare',
+      url: '/folder/PersonalCare',
+      icon: 'person'
     },
     {
-      title: 'Outbox',
-      url: '/folder/Outbox',
-      icon: 'paper-plane'
+      title: 'HealthObservation',
+      url: '/folder/HealthObservation',
+      icon: 'pulse'
     },
     {
-      title: 'Favorites',
-      url: '/folder/Favorites',
-      icon: 'heart'
+      title: 'Fitness',
+      url: '/folder/Fitness',
+      icon: 'fitness'
     },
     {
-      title: 'Archived',
-      url: '/folder/Archived',
-      icon: 'archive'
+      title: 'VitalParameters',
+      url: '/folder/VitalParameters',
+      icon: 'thermometer'
     },
     {
-      title: 'Trash',
-      url: '/folder/Trash',
-      icon: 'trash'
+      title: 'PatientRecord',
+      url: '/folder/PatientRecord',
+      icon: 'file-tray'
     },
     {
-      title: 'Spam',
-      url: '/folder/Spam',
-      icon: 'warning'
+      title: 'HealthChat',
+      url: '/folder/HealthChat',
+      icon: 'chatbubbles'
     }
   ];
-  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
 
   constructor(
     private platform: Platform,
@@ -56,7 +55,7 @@ export class AppComponent implements OnInit {
   initializeApp() {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
-      this.splashScreen.hide();
+      this.splashScreen.show();
     });
   }
 
