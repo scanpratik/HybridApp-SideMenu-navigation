@@ -10,6 +10,12 @@ HybridApp-SideMenu-navigation
 * https://www.freakyjolly.com/ionic-side-menu-navigation-tutorial-example-application/#.X32YBy8RqfU
 * https://openwebsolutions.in/blog/how-create-side-menu-using-ionic/
 
+adb devices 
+ionic run android 
+ionic emulate android
+ionic capacitor copy android
+ 
+
 
 
 ![alt text](https://github.com/scanpratik/HybridApp-SideMenu-navigation/blob/main/Screenshot%202020-10-08%20at%2000.50.09.png)
