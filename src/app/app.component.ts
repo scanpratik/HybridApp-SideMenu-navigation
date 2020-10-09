@@ -16,6 +16,7 @@ export class AppComponent implements OnInit {
       title: 'PersonalCare',
       url: '/folder/PersonalCare',
       icon: 'person'
+
     },
     {
       title: 'HealthObservation',

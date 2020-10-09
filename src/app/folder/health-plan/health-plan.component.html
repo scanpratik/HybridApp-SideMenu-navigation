@@ -1,0 +1,40 @@
+<ion-card class="hel" *ngIf="subpart == ''">
+    <ion-card-header>
+        <ion-card-title>Personal health plans</ion-card-title>
+        <ion-card-subtitle>We offer various health plans which meets everyone’s requirements. You can avail the benefits
+            below to make you and your family healthier.
+        </ion-card-subtitle>
+    </ion-card-header>
+</ion-card>
+<ion-card *ngIf="subpart == ''">
+    <ion-item (click)="gotoHealthCoach()">
+        <ion-icon name="medkit-outline" slot="start"></ion-icon>
+        <ion-badge color="tertiary">Health Coach Program - Dedicated Nutritionist</ion-badge>
+    </ion-item>
+
+    <ion-item href="#">
+        <ion-icon name="medical-outline" slot="start"></ion-icon>
+        <ion-badge color="secondary">Pregnancy Care</ion-badge>
+    </ion-item>
+    <ion-item href="#">
+        <ion-icon name="medkit-outline" slot="start"></ion-icon>
+        <ion-badge color="tertiary">Smoking Cessation</ion-badge>
+    </ion-item>
+    <ion-item href="#">
+        <ion-icon name="medical-outline" slot="start"></ion-icon>
+        <ion-badge color="secondary">Fitness Regime</ion-badge>
+    </ion-item>
+    <ion-item href="#">
+        <ion-icon name="medkit-outline" slot="start"></ion-icon>
+        <ion-badge color="tertiary">Balance Your Chakras - Meditation sessions</ion-badge>
+    </ion-item>
+    <ion-item href="#">
+        <ion-icon name="medical-outline" slot="start"></ion-icon>
+        <ion-badge color="secondary">Disease management</ion-badge>
+    </ion-item>
+    <ion-item href="#">
+        <ion-icon name="medkit-outline" slot="start"></ion-icon>
+        <ion-badge color="tertiary">Covid Management Plan</ion-badge>
+    </ion-item>
+</ion-card>
+<app-pregnancy-care *ngIf="subpart == 'preg'"></app-pregnancy-care>
